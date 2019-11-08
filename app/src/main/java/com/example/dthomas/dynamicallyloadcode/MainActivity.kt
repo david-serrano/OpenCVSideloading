@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        text_view.text = loadDexFile("dm.dex").text
-        textView2.text = loadDexFile("dm2.dex").text
+     //   text_view.text = loadDexFile("dm.dex").text
+        textView2.text = loadDexFile("dm2.dex").getText(this)
     }
 
     fun sourceFile(name: String) = packageManager.getPackageInfo(packageName, 0)

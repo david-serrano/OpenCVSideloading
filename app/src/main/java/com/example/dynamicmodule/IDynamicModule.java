@@ -1,6 +1,8 @@
 package com.example.dynamicmodule;
 
+import android.content.Context;
+
 public interface IDynamicModule {
 
-    String getText();
+    String getText(Context context);
 }
